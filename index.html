@@ -19,7 +19,9 @@
       box-sizing: border-box;
     }
     main {
-      max-width: 700px;
+      max-width: 1000px;
+      width: 100%;
+      padding: 48px 0;
     }
     .business {
       font-size: clamp(1rem, 4vw, 1.5rem);
@@ -62,6 +64,32 @@
     .btn:hover {
       transform: translateY(-2px);
     }
+    .gallery h2 {
+      font-size: 1.6rem;
+      margin: 3rem 0 1rem;
+    }
+    .photos {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 12px;
+    }
+    .photos a {
+      display: block;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+    }
+    .photos img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      object-position: center top;
+      transition: transform 0.3s ease;
+    }
+    .photos a:hover img {
+      transform: scale(1.04);
+    }
   </style>
 </head>
 <body>
@@ -73,6 +101,18 @@
       <div class="buttons">
         <a class="btn" href="https://www.snapchat.com/add/leo.zaya" target="_blank" rel="noopener">Leo’s Snap</a>
         <a class="btn" href="https://www.snapchat.com/add/sargon.zorna" target="_blank" rel="noopener">Sargon’s Snap</a>
+      </div>
+    </section>
+    <section class="gallery">
+      <h2>Gallery</h2>
+      <div class="photos">
+        <a href="images/photo-1.jpg" target="_blank" rel="noopener"><img src="images/photo-1.jpg" alt="Sargon and Leo with zorna and dahola at a wedding" loading="lazy"></a>
+        <a href="images/photo-2.jpg" target="_blank" rel="noopener"><img src="images/photo-2.jpg" alt="Sargon and Leo posing with their instruments" loading="lazy"></a>
+        <a href="images/photo-3.jpg" target="_blank" rel="noopener"><img src="images/photo-3.jpg" alt="Sargon and Leo performing on the dance floor" loading="lazy"></a>
+        <a href="images/photo-4.jpg" target="_blank" rel="noopener"><img src="images/photo-4.jpg" alt="Playing zorna and dahola together at a wedding" loading="lazy"></a>
+        <a href="images/photo-5.jpg" target="_blank" rel="noopener"><img src="images/photo-5.jpg" alt="Sargon and Leo on the dance floor under the chandeliers" loading="lazy"></a>
+        <a href="images/photo-6.jpg" target="_blank" rel="noopener"><img src="images/photo-6.jpg" alt="Sargon and Leo in black with zorna and dahola" loading="lazy"></a>
+        <a href="images/photo-7.jpg" target="_blank" rel="noopener"><img src="images/photo-7.jpg" alt="Sargon and Leo in traditional dress with their instruments" loading="lazy"></a>
       </div>
     </section>
   </main>
