@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sargon &amp; Leo</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: system-ui, -apple-system, sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #fff;
+      text-align: center;
+      padding: 16px;
+      box-sizing: border-box;
+    }
+    main {
+      max-width: 700px;
+    }
+    .business {
+      font-size: clamp(1rem, 4vw, 1.5rem);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin: 0 0 0.5rem;
+      opacity: 0.9;
+    }
+    h1 {
+      font-size: clamp(2.5rem, 10vw, 6rem);
+      margin: 0;
+      text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+    .wedding {
+      font-size: clamp(1.1rem, 4vw, 1.4rem);
+      line-height: 1.5;
+      margin: 1.5rem 0 2rem;
+    }
+    .contact h2 {
+      font-size: 1.2rem;
+      margin: 0 0 1rem;
+    }
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: 999px;
+      background: #fffc00;
+      color: #000;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+      transition: transform 0.15s ease;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Sargon &amp; Leo</h1>
+    <p class="wedding">We are musicians who play Dahola &amp; Zorna to bring joy and energy to your wedding.</p>
+    <section class="contact">
+      <h2>Contact us on Snapchat</h2>
+      <div class="buttons">
+        <a class="btn" href="https://www.snapchat.com/add/leo.zaya" target="_blank" rel="noopener">Leo’s Snap</a>
+        <a class="btn" href="https://www.snapchat.com/add/sargon.zorna" target="_blank" rel="noopener">Sargon’s Snap</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
